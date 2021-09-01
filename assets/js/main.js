@@ -164,7 +164,6 @@ window.addEventListener('keyup',(e) => {
 	pressed.push(e.key);
 	pressed.splice(-SecretCode.length -1, pressed.length - SecretCode.length );
 	if(pressed.join('').includes(SecretCode)){
-		console.log('Ding Ding')
 		cornify_add();
 	}
 });
